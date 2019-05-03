@@ -1,0 +1,26 @@
+{
+  "name": "@sylvaincorlay/nbconvert_labcss",
+  "version": "0.0.1",
+  "description": "CSS bundle for the JupyterLab nbconvert template",
+  "scripts": {
+    "clean": "rimraf style/",
+    "build": "lessc src/index.less style/style.min.css",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "Jupyter"
+  ],
+  "author": "Sylvain Corlay",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "@jupyterlab/apputils": "^0.19.1",
+    "@jupyterlab/cells": "^0.19.1",
+    "@jupyterlab/codemirror": "1.0.0-alpha.6",
+    "@jupyterlab/notebook": "1.0.0-alpha.7",
+    "@jupyterlab/outputarea": "^0.19.1",
+    "@jupyterlab/rendermime": "1.0.0-alpha.6",
+    "@jupyterlab/theme-light-extension": "1.0.0-alpha.6",
+    "less": "^2.6.1",
+    "rimraf": "^2.6.1"
+  }
+}
